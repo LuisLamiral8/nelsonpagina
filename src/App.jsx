@@ -1,18 +1,28 @@
 import { useState } from "react";
+import Accessibility from "./components/Accessibility";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <main className="container">
+      <Accessibility></Accessibility>
       <nav>
         <img className="logo" src="/assets/logo.webp" alt="" />
         <ul>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">Envianos tu curriculum!</a></li>
+          <li>
+            <a href="#">Nosotros</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+          <li>
+            <a href="#">Novedades</a>
+          </li>
+          <li>
+            <a href="#">Envianos tu curriculum!</a>
+          </li>
         </ul>
       </nav>
       <header className="header">
@@ -26,13 +36,27 @@ function App() {
       </header>
       <div className="section0">
         <ul>
-          <li><a href="#">Exposiciones</a></li>
-          <li><a href="#">Acccesibilidad</a></li>
-          <li><a href="#">Educacion</a></li>
-          <li><a href="#">Coleccion</a></li>
-          <li><a href="#">El museo</a></li>
-          <li><a href="#">Agenda</a></li>
-          <li><a href="#">Entradas</a></li>
+          <li>
+            <a href="#">Exposiciones</a>
+          </li>
+          <li>
+            <a href="#">Acccesibilidad</a>
+          </li>
+          <li>
+            <a href="#">Educacion</a>
+          </li>
+          <li>
+            <a href="#">Coleccion</a>
+          </li>
+          <li>
+            <a href="#">El museo</a>
+          </li>
+          <li>
+            <a href="#">Agenda</a>
+          </li>
+          <li>
+            <a href="#">Entradas</a>
+          </li>
         </ul>
       </div>
       <section className="section">
