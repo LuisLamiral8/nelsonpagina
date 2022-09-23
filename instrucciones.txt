@@ -1,0 +1,8 @@
+situarse con el simbolo de sistemas en esta carpeta, y colocar
+"npm run dev"
+
+si aparece que no se reconoce vite, colocar
+"npm install -g vite"
+
+de todas formas, lo subí a un host, el enlace es:
+https://nelsonpagina-po2l.vercel.app/
