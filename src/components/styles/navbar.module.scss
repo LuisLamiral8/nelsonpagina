@@ -8,6 +8,23 @@
   align-items: center;
   flex-direction: row;
   height: 40px;
+  .ham {
+    display: none;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: white;
+    }
+  }
+  .responsive {
+    display: none;
+  }
   .logo {
     width: 75px;
     position: absolute;
@@ -15,7 +32,7 @@
     left: 10px;
     border-radius: 100px;
   }
-  ul {
+  .navUl {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +53,52 @@
         &:hover {
           font-size: 17px;
           color: gray;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navUl {
+    display: none !important;
+  }
+  .ham {
+    cursor: pointer;
+    display: flex !important;
+    z-index: 15;
+    position: absolute;
+    top: 5px;
+    right: 15px !important;
+  }
+  .responsiveContainer {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 15;
+    height: 80vh;
+    width: 100%;
+    background: black;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      li {
+        list-style: none;
+        a {
+          font-size: 20px;
+          font-family: Roboto, sans-serif;
+          color: white;
+          transition: all 250ms;
+          &:hover{
+            color: gray;
+          }
         }
       }
     }

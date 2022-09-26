@@ -5,7 +5,7 @@ import App from "../App";
 import Blog from "../pages/Blog";
 import News from "../pages/News";
 import Cv from "../pages/Cv";
-import "../globals.scss";
+import "../styles/globals.scss";
 
 export const AppRouter = () => {
   return (

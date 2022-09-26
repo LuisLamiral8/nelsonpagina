@@ -2,21 +2,22 @@ import { useState } from "react";
 import Accessibility from "./components/Accessibility";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import styles from './styles/landing.module.scss';
 function App() {
   return (
-    <main className="container">
+    <main className={styles.container}>
       <Accessibility></Accessibility>
       <Navbar></Navbar>
-      <header className="header">
-        <div className="headerleft">
+      <header className={styles.header}>
+        <div className={styles.headerleft}>
           <h1>Museo de arte moderno</h1>
           <h3>Conoce más de nuestro museo deslizando para abajo</h3>
         </div>
-        <div className="headerright">
+        <div className={styles.headerright}>
           <img src="/assets/museum.svg" alt="" />
         </div>
       </header>
-      <div className="section0">
+      <div className={styles.section0}>
         <ul>
           <li>
             <a href="#exposiciones">Exposiciones</a>
@@ -33,16 +34,10 @@ function App() {
           <li>
             <a href="#museo">El museo</a>
           </li>
-          <li>
-            <a href="#agenda">Agenda</a>
-          </li>
-          <li>
-            <a href="#entradas">Entradas</a>
-          </li>
         </ul>
       </div>
-      <section id="exposiciones" className="exposiciones">
-        <div className="exposicionesleft">
+      <section id="exposiciones" className={styles.exposiciones}>
+        <div className={styles.exposicionesleft}>
           <h3>Exposiciones</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -57,10 +52,10 @@ function App() {
             eligendi harum dignissimos?
           </p>
         </div>
-        <div className="exposicionesright"></div>
+        <div className={styles.exposicionesright}></div>
       </section>
-      <section id="accesibilidad"className="accesibilidad">
-        <div className="accesibilidadleft">
+      <section id="accesibilidad" className={styles.accesibilidad}>
+        <div className={styles.accesibilidadleft}>
           <h3>Accesibilidad</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -75,10 +70,10 @@ function App() {
             eligendi harum dignissimos?
           </p>
         </div>
-        <div className="accesibilidadright"></div>
+        <div className={styles.accesibilidadright}></div>
       </section>
-      <section id="educacion" className="educacion">
-        <div className="educacionleft">
+      <section id="educacion" className={styles.educacion}>
+        <div className={styles.educacionleft}>
           <h3>Educacion</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -93,10 +88,10 @@ function App() {
             eligendi harum dignissimos?
           </p>
         </div>
-        <div className="educacionright"></div>
+        <div className={styles.educacionright}></div>
       </section>
-      <section id="coleccion" className="coleccion">
-        <div className="coleccionleft">
+      <section id="coleccion" className={styles.coleccion}>
+        <div className={styles.coleccionleft}>
           <h3>Coleccion</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -111,10 +106,10 @@ function App() {
             eligendi harum dignissimos?
           </p>
         </div>
-        <div className="coleccionright"></div>
+        <div className={styles.coleccionright}></div>
       </section>
-      <section id="museo" className="museo">
-        <div className="museoleft">
+      <section id="museo" className={styles.museo}>
+        <div className={styles.museoleft}>
           <h3>El Museo</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -129,7 +124,7 @@ function App() {
             eligendi harum dignissimos?
           </p>
         </div>
-        <div className="museoright"></div>
+        <div className={styles.museoright}></div>
       </section>
       <Footer></Footer>
     </main>

@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  height: 100%;
+  .header {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .headerleft {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      // align-items: center;
+      h1,
+      h3 {
+        font-weight: 1000;
+        text-align: left;
+        font-size: 5rem;
+      }
+      h3 {
+        width: 60%;
+        font-size: 2rem;
+      }
+      flex-direction: column;
+    }
+    .headerright {
+      width: 40%;
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .section0 {
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    background: rgba(0, 0, 0, 0.336);
+    // background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 5vw;
+      height: 80%;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+        transition: all 250ms;
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: Mukta;
+          font-weight: 1000;
+          font-size: 2rem;
+          transition: all 250ms;
+        }
+        &:hover {
+          border-top: 4px solid white;
+          border-bottom: 4px solid white;
+          a {
+            color: gray;
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+  .section {
+    background: rgba(0, 0, 0, 0.336);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .section1left {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 15px;
+      h3 {
+        font-size: 5rem;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+.exposiciones,
+.accesibilidad,
+.educacion,
+.coleccion,
+.museo {
+  background: rgba(0, 0, 0, 0.336);
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .exposicionesleft,
+  .accesibilidadleft,
+  .educacionleft,
+  .coleccionleft,
+  .museoleft {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    h3 {
+      font-size: 5rem;
+      margin-bottom: 50px;
+    }
+  }
+}
